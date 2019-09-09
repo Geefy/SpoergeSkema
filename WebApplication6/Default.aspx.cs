@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Diagnostics;
+
+using System.Collections;
+
 namespace WebApplication6
 {
     public partial class _Default : Page
@@ -14,7 +17,7 @@ namespace WebApplication6
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
         public void Button1_Click(object sender, EventArgs e)
         {
@@ -23,7 +26,7 @@ namespace WebApplication6
                 return;
 
             // a is our selected value from the list
-            string selectedItemFromList = rblMeasurementSystem.SelectedValue;
+            string selectedItemFromList = RadioList.SelectedValue;
             Debug.WriteLine(selectedItemFromList);
         }
 
@@ -36,10 +39,11 @@ namespace WebApplication6
         {
             selected = false;
 
-            if (rblMeasurementSystem.SelectedValue == string.Empty)
+            if (RadioList.SelectedValue == string.Empty)
                 args.IsValid = false;
             else
                 selected = true;
         }
+        
     }
 }

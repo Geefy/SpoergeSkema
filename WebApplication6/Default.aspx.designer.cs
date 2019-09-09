@@ -31,13 +31,13 @@ namespace WebApplication6 {
         protected global::System.Web.UI.WebControls.TextBox Efternavn;
         
         /// <summary>
-        /// rblMeasurementSystem control.
+        /// RadioList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rblMeasurementSystem;
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioList;
         
         /// <summary>
         /// vldCheckboxes control.

@@ -4,32 +4,42 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using System.Diagnostics;
 namespace WebApplication6
 {
     public partial class _Default : Page
     {
         Logik logik = new Logik();
-        Resultater resultat = new Resultater();
+        bool selected;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             
         }
         public void Button1_Click(object sender, EventArgs e)
         {
-            resultat.Fornavn = Fornavn.Text;
-            resultat.Efternavn = Efternavn.Text;
-            resultat.Q1 = Q1dd.Text;
-            resultat.Q2 = Q2dd.Text;
-            resultat.Q3 = Q3dd.Text;
-            resultat.Q4 = Q4dd.Text;
-            resultat.Q5 = Q5dd.Text;
-            resultat.Q6 = Q6dd.Text;
-            resultat.Q7 = Q7dd.Text;
-            resultat.Q8 = Q8dd.Text;
-            resultat.Q9 = Q9dd.Text;
-            resultat.Q10 = Q10dd.Text;
-            logik.SendAnswer(resultat);
+            // if any value is not selected dont do anything
+            if (selected == false)
+                return;
+
+            // a is our selected value from the list
+            string selectedItemFromList = rblMeasurementSystem.SelectedValue;
+            Debug.WriteLine(selectedItemFromList);
+        }
+
+        /// <summary>
+        /// Check if any value is selected else trow a error 
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="args"></param>
+        protected void vldCheckboxes_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            selected = false;
+
+            if (rblMeasurementSystem.SelectedValue == string.Empty)
+                args.IsValid = false;
+            else
+                selected = true;
         }
     }
 }

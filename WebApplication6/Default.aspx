@@ -11,74 +11,70 @@
         <asp:Image runat="server" ImageUrl="~/Content/zbclogo.jpg" />
     </div>
 
-    <div class="row">
-        <asp:DropDownList ID="Q1dd" runat="server">
-            <asp:ListItem Enabled="true" Text="Spørgsmål 1"></asp:ListItem>
-            <asp:ListItem Text="January"></asp:ListItem>
-            <asp:ListItem Text="February"></asp:ListItem>
-            <asp:ListItem Text="December"></asp:ListItem>
-        </asp:DropDownList>
-    </div>
-    <asp:DropDownList ID="Q2dd" runat="server">
-        <asp:ListItem Enabled="true" Text="Spørgsmål 2"></asp:ListItem>
-        <asp:ListItem Text="January"></asp:ListItem>
-        <asp:ListItem Text="February"></asp:ListItem>
-        <asp:ListItem Text="December"></asp:ListItem>
-    </asp:DropDownList>
-    <asp:DropDownList ID="Q3dd" runat="server">
-        <asp:ListItem Enabled="true" Text="Spørgsmål 3"></asp:ListItem>
-        <asp:ListItem Text="January"></asp:ListItem>
-        <asp:ListItem Text="February"></asp:ListItem>
-        <asp:ListItem Text="December"></asp:ListItem>
-    </asp:DropDownList>
-    <asp:DropDownList ID="Q4dd" runat="server">
-        <asp:ListItem Enabled="true" Text="Spørgsmål 4"></asp:ListItem>
-        <asp:ListItem Text="January"></asp:ListItem>
-        <asp:ListItem Text="February"></asp:ListItem>
-        <asp:ListItem Text="December"></asp:ListItem>
-    </asp:DropDownList>
-    <asp:DropDownList ID="Q5dd" runat="server">
-        <asp:ListItem Enabled="true" Text="Spørgsmål 5"></asp:ListItem>
-        <asp:ListItem Text="January"></asp:ListItem>
-        <asp:ListItem Text="February"></asp:ListItem>
-        <asp:ListItem Text="December"></asp:ListItem>
-    </asp:DropDownList>
-    <asp:DropDownList ID="Q6dd" runat="server">
-        <asp:ListItem Enabled="true" Text="Spørgsmål 6"></asp:ListItem>
-        <asp:ListItem Text="January"></asp:ListItem>
-        <asp:ListItem Text="February"></asp:ListItem>
-        <asp:ListItem Text="December"></asp:ListItem>
-    </asp:DropDownList>
-<%--    hello world--%>
-    <asp:DropDownList ID="Q7dd" runat="server">
-        <asp:ListItem Enabled="true" Text="Spørgsmål 7"></asp:ListItem>
-        <asp:ListItem Text="January"></asp:ListItem>
-        <asp:ListItem Text="February"></asp:ListItem>
-        <asp:ListItem Text="December"></asp:ListItem>
-    </asp:DropDownList>
-    <asp:DropDownList ID="Q8dd" runat="server">
-        <asp:ListItem Enabled="true" Text="Spørgsmål 8"></asp:ListItem>
-        <asp:ListItem Text="January"></asp:ListItem>
-        <asp:ListItem Text="February"></asp:ListItem>
-        <asp:ListItem Text="December"></asp:ListItem>
-    </asp:DropDownList>
-    <asp:DropDownList ID="Q9dd" runat="server">
-        <asp:ListItem Enabled="true" Text="Spørgsmål 9"></asp:ListItem>
-        <asp:ListItem Text="January"></asp:ListItem>
-        <asp:ListItem Text="February"></asp:ListItem>
-        <asp:ListItem Text="December"></asp:ListItem>
-    </asp:DropDownList>
-    </asp:DropDownList>
-    <asp:DropDownList ID="Q10dd" runat="server">
-        <asp:ListItem Enabled="true" Text="Spørgsmål 10"></asp:ListItem>
-        <asp:ListItem Text="January"></asp:ListItem>
-        <asp:ListItem Text="February"></asp:ListItem>
-        <asp:ListItem Text="December"></asp:ListItem>
-    </asp:DropDownList>
+    <%-- (1) Question1   1 out of 10 checkbox --%>
+
+<%--    <asp:CheckBox ID="Q1_1" groupname="group2" runat="server" Text="1" />
+
+    <asp:CheckBox ID="Q2_1" groupname="group2" runat="server" Text="2" />
+
+    <asp:CheckBox ID="Q3_1" groupname="group2" runat="server" Text="3" />
+
+    <asp:CheckBox ID="Q4_1" groupname="group2" runat="server" Text="4" />
+
+    <asp:CheckBox ID="Q5_1" groupname="group2" runat="server" Text="5" />
+
+    <asp:CheckBox ID="Q6_1" groupname="group2" runat="server" Text="6" />
+
+    <asp:CheckBox ID="Q7_1" groupname="group2" runat="server" Text="7" />
+
+    <asp:CheckBox ID="Q8_1" groupname="group2" runat="server" Text="8" />
+
+    <asp:CheckBox ID="Q9_1" groupname="group2" runat="server" Text="9" />
+
+    <asp:CheckBox ID="Q10_1" groupname="group2" runat="server" Text="10" />--%>
 
 
+<%--    Works--%>
+
+<%--    <asp:RadioButton ID="Q14_1" GroupName="gender" Text="1" runat="server"/>
+    <asp:RadioButton ID="Q15_1" GroupName="gender" Text="2" runat="server"/>
+    <asp:RadioButton ID="Q16_1" GroupName="gender" Text="3" runat="server"/>--%>
+
+    <asp:RadioButtonList ID="rblMeasurementSystem" runat="server">
+        <asp:ListItem Text="1" Value="1" />
+        <asp:ListItem Text="2" Value="2" />
+    </asp:RadioButtonList>
+
+
+<%--    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other--%>
+
+
+    <asp:CustomValidator ID="vldCheckboxes" runat="server"  onservervalidate="vldCheckboxes_ServerValidate" Text="*" ErrorMessage="Select atleast one" />
+
+<%-- (2) Inputbox  --%>
+
+<%-- (3) Question2   1 out of 10 checkbox  --%>
+
+<%-- (4) Inputbox  --%>
+
+<%-- (5) Question3   1 out of 10 checkbox  --%>
+
+<%-- (6) Inputbox  --%>
+
+<%-- (7) Question3   1 out of 10 checkbox  --%>
+
+<%-- (8) Inputbox  --%>
+
+<%-- (9) Inputbox  last --%>
+
+<%-- Submit button --%>
     <div class="row">
         <asp:Button ID="SubmitButton" runat="server" OnClick="Button1_Click" Text="Submit" />
+         <asp:ValidationSummary ID="vldChexckboxes" runat="server" />
     </div>
 
 </asp:Content>
+
+

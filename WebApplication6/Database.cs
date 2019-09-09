@@ -43,18 +43,7 @@ namespace WebApplication6
                     while (reader.Read())
                     {
                         Resultater result = new Resultater();
-                        result.Fornavn = reader["Fornavn"].ToString();
-                        result.Efternavn = reader["Efternavn"].ToString();
-                        result.Q1 = reader["Q1"].ToString();
-                        result.Q2 = reader["Q2"].ToString();
-                        result.Q3 = reader["Q3"].ToString();
-                        result.Q4 = reader["Q4"].ToString();
-                        result.Q5 = reader["Q5"].ToString();
-                        result.Q6 = reader["Q6"].ToString();
-                        result.Q7 = reader["Q7"].ToString();
-                        result.Q8 = reader["Q8"].ToString();
-                        result.Q9 = reader["Q9"].ToString();
-                        result.Q10 = reader["Q10"].ToString();
+                     
 
                         results.Add(result);
                     }

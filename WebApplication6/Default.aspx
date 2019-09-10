@@ -2,14 +2,11 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-
     <div class="row">
-
         <asp:Image runat="server" ImageUrl="~/Content/zbclogo.jpg" />
     </div>
 
     <%-- (1) Question1   1 out of 10 checkbox --%>
-
 
     <label for="MainContent_RadioListQ1_0">1</label>
     <label for="MainContent_RadioListQ1_1">2</label>
@@ -19,8 +16,8 @@
     <label for="MainContent_RadioListQ1_5">6</label>
     <label for="MainContent_RadioListQ1_6">7</label>
     <label for="MainContent_RadioListQ1_7">8</label>
-    <label for="MainContent_RadioListQ1_8">9</label>
-    <label for="MainContent_RadioListQ1_9">10</label>
+    <label class="label10" for="MainContent_RadioListQ1_8">9</label>
+    <label class="label10" for="MainContent_RadioListQ1_9">10</label>
 
     <asp:RadioButtonList ID="RadioListQ1" CssClass="radioButtonList" runat="server" RepeatDirection="Horizontal" TextAlign="Left">
         <asp:ListItem Text="" Value="1" />
@@ -34,10 +31,6 @@
         <asp:ListItem Text="" Value="9" />
         <asp:ListItem Text="" Value="10" />
     </asp:RadioButtonList>
-
-
-
-
 
     <asp:CustomValidator ID="vldCheckboxes" runat="server" OnServerValidate="vldCheckboxes_ServerValidate" Text="*" ErrorMessage="Select atleast one" />
 
@@ -55,8 +48,8 @@
     <label for="MainContent_RadioListQ2_5">6</label>
     <label for="MainContent_RadioListQ2_6">7</label>
     <label for="MainContent_RadioListQ2_7">8</label>
-    <label for="MainContent_RadioListQ2_8">9</label>
-    <label for="MainContent_RadioListQ2_9">10</label>
+    <label class="label10" for="MainContent_RadioListQ2_8">9</label>
+    <label class="label10" for="MainContent_RadioListQ2_9">10</label>
 
     <asp:RadioButtonList ID="RadioListQ2" CssClass="radioButtonList" runat="server" RepeatDirection="Horizontal" TextAlign="Left">
         <asp:ListItem Text="" Value="1" />
@@ -85,8 +78,8 @@
     <label for="MainContent_RadioListQ3_5">6</label>
     <label for="MainContent_RadioListQ3_6">7</label>
     <label for="MainContent_RadioListQ3_7">8</label>
-    <label for="MainContent_RadioListQ3_8">9</label>
-    <label for="MainContent_RadioListQ3_9">10</label>
+    <label class="label10" for="MainContent_RadioListQ3_8">9</label>
+    <label class="label10" for="MainContent_RadioListQ3_9">10</label>
 
     <asp:RadioButtonList ID="RadioListQ3" CssClass="radioButtonList" runat="server" RepeatDirection="Horizontal" TextAlign="Left">
         <asp:ListItem Text="" Value="1" />
@@ -115,8 +108,8 @@
     <label for="MainContent_RadioListQ4_5">6</label>
     <label for="MainContent_RadioListQ4_6">7</label>
     <label for="MainContent_RadioListQ4_7">8</label>
-    <label for="MainContent_RadioListQ4_8">9</label>
-    <label for="MainContent_RadioListQ4_9">10</label>
+    <label class="label10" for="MainContent_RadioListQ4_8">9</label>
+    <label class="label10" for="MainContent_RadioListQ4_9">10</label>
 
     <asp:RadioButtonList ID="RadioListQ4" CssClass="radioButtonList" runat="server" RepeatDirection="Horizontal" TextAlign="Left">
         <asp:ListItem Text="" Value="1" />
@@ -160,6 +153,16 @@
             .radioButtonList label {
                 display: inline;
                 padding: 5px;
+            }
+            label{
+                    padding-left: 4px;
+                    margin-right: 8.2px;
+            }
+            td, th{
+                padding: 5px;
+            }
+            .label10{
+                margin-left: -2.7px;
             }
     </style>
 </asp:Content>

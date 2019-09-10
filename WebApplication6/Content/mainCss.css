@@ -1,0 +1,47 @@
+﻿body {
+}
+
+.ContentBody{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.radioButtonList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.radioButtonList.horizontal li {
+    display: inline;
+
+}
+
+.radioButtonList label {
+    display: inline;
+    padding: 5px;
+}
+
+label {
+    padding-left: 4px;
+    margin-right: 8.2px;
+}
+
+td, th {
+    padding: 5px !important;
+}
+
+.label10 {
+    margin-left: -2.7px;
+}
+
+.ChecboxLabel{
+}
+.InputBox{
+    padding-bottom: 20px;
+}
+.InputBoxx {
+    width: 100%;
+    max-width: none;
+    height: 35px;
+}

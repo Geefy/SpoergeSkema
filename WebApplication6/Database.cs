@@ -8,7 +8,7 @@ namespace WebApplication6
 {
     public class Database
     {
-        static SqlConnection sqlCon = new SqlConnection((@"DATA SOURCE= ZBC-EMA-1617; Initial Catalog = SpoergeSkemaDB; Integrated Security=True;"));
+        static SqlConnection sqlCon = new SqlConnection((@"DATA SOURCE= ZBC-EMA-1617; Initial Catalog = Website; Integrated Security=True;"));
         SqlCommand sqlCom = new SqlCommand("", sqlCon);
 
         public void InsertIntoDatabase(string[] values)

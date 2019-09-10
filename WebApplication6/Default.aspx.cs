@@ -19,14 +19,14 @@ namespace WebApplication6
         {
 
         }
-        public void Button1_Click(object sender, EventArgs e)
+        public void SubmiteButton(object sender, EventArgs e)
         {
             // if any value is not selected dont do anything
             if (selected == false)
                 return;
 
             // a is our selected value from the list
-            string selectedItemFromList = RadioList.SelectedValue;
+            string selectedItemFromList = RadioListQ1.SelectedValue;
             Debug.WriteLine(selectedItemFromList);
         }
 
@@ -39,7 +39,7 @@ namespace WebApplication6
         {
             selected = false;
 
-            if (RadioList.SelectedValue == string.Empty)
+            if (RadioListQ1.SelectedValue == string.Empty)
                 args.IsValid = false;
             else
                 selected = true;

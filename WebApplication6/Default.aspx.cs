@@ -41,6 +41,12 @@ namespace WebApplication6
 
             if (RadioListQ1.SelectedValue == string.Empty)
                 args.IsValid = false;
+            else if (RadioListQ2.SelectedValue == string.Empty)
+                args.IsValid = false;
+            else if (RadioListQ3.SelectedValue == string.Empty)
+                args.IsValid = false;
+            else if (RadioListQ4.SelectedValue == string.Empty)
+                args.IsValid = false;
             else
                 selected = true;
         }

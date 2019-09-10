@@ -1,5 +1,5 @@
-﻿body {
-}
+
+
 
 .ContentBody{
     padding-left: 120px;
@@ -35,12 +35,14 @@ td, th {
     margin-left: -2.7px;
 }
 
+
 .ChecboxLabel {
     padding-top: 10px;
 }
 .ChecboxList {
     padding-bottom: 10px;
 }
+
 .InputBox{
     padding-bottom: 20px;
 }
@@ -49,6 +51,7 @@ td, th {
     max-width: none;
     height: 35px;
 }
+
 
 p.PForPaludan {
     font-size: 23px;
@@ -74,3 +77,4 @@ p.HeaderTextH {
     margin: 0 340px 10px;
     align-content: center;
 }
+

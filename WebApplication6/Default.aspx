@@ -1,4 +1,6 @@
+
 ﻿<%@ Page Title="Praktikpladskonsulentseminar 2019" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication6._Default" %>
+
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -23,10 +25,14 @@
         <p class="HeaderTextH">Benjamin Jacobsen/UNord</p>
         <p class="HeaderText">For de punkter hvor du skal svarer 1-10 (1 = lavest udbytte - 10 = højeste udbytte)</p>
     </div>
+<div class="ContentBody">
+
 
     <%-- (1) Question1   1 out of 10 checkbox --%>
     <div class="CheckBoxContent">
+
         <p class="PForPaludan">Velkomst v. Lars Gaardshøj (Udvalgsformand for Erhvervs- og vækstudvalget i Region Hovedstaden) Blev dine forventninger indfriet?</p>
+
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ1_0">1</label>
             <label for="MainContent_RadioListQ1_1">2</label>
@@ -59,14 +65,18 @@
 
     <%-- (2) Inputbox  --%>
     <div class="InputBox">
+
         <p class="PForPaludan">Kommentarer</p>
         <br />
         <asp:TextBox CssClass="InputBoxx" ID="Comment1" placeholder="Skriv dit svar" Text="" runat="server"></asp:TextBox>
+
         <br />
     </div>
     <%-- (3) Question2   1 out of 10 checkbox  --%>
     <div class="CheckBoxContent">
+
         <p class="PForPaludan">Fremtidens arbejdsmarked v. Henrik Good Hovgaard (Fremtidsforsker og direktør for Future Navigator) Blev dine forventninger indfriet?</p>
+
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ2_0">1</label>
             <label for="MainContent_RadioListQ2_1">2</label>
@@ -96,15 +106,18 @@
     </div>
     <%-- (4) Inputbox  --%>
     <div class="InputBox">
-        <p class="PForPaludan">Kommentarer</p>
+       <p class="PForPaludan">Kommentarer</p>
         <br />
         <asp:TextBox CssClass="InputBoxx" ID="Comment2" placeholder="Skriv dit svar" Text="" runat="server"></asp:TextBox>
+
         <br />
     </div>
     <%-- (5) Question3   1 out of 10 checkbox  --%>
 
     <div class="CheckBoxContent">
+
         <p class="PForPaludan">Gruppeøvelser/Oplæg - Blev dine forventninger indfriet?</p>
+
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ3_0">1</label>
             <label for="MainContent_RadioListQ3_1">2</label>
@@ -136,15 +149,18 @@
 
     <%-- (6) Inputbox  --%>
     <div class="InputBox">
+
         <p class="PForPaludan">Kommentarer</p>
         <br />
         <asp:TextBox CssClass="InputBoxx" ID="Comment3" placeholder="Skriv dit svar" Text="" runat="server"></asp:TextBox>
+
         <br />
     </div>
     <%-- (7) Question3   1 out of 10 checkbox  --%>
 
     <div class="CheckBoxContent">
         <p class="PForPaludan">Praktikpladsen.dk v. Tommy Ravn Jensen (Styrelsen for IT og læring, Chefkonsulent) Blev dine forventninger indfriet?</p>
+
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ4_0">1</label>
             <label for="MainContent_RadioListQ4_1">2</label>
@@ -176,23 +192,29 @@
 
     <%-- (8) Inputbox  --%>
     <div class="InputBox">
+
         <p class="PForPaludan">Kommentarer</p>
         <br />
         <asp:TextBox CssClass="InputBoxx" ID="Comment4" placeholder="Skriv dit svar" Text="" runat="server"></asp:TextBox>
+
         <br />
     </div>
     <%-- (9) Inputbox  last --%>
     <div class="InputBox"> 
+
         <p class="PForPaludan">Opsamling og invitation til deltagelse i planlægningsgruppen? Hvis du ikke fik tilkendegivet du gerne ville deltage, er du velkommen til at sende en mail til: at@tec.dk Evt. kommentarer </p>
         <br />
         <asp:TextBox CssClass="InputBoxx" ID="LastComment" placeholder="Skriv dit svar" Text="" runat="server"></asp:TextBox>
+
         <br />
     </div>
     <%-- Submit button --%> 
 
 
         <div class="row">
+
             <asp:Button  ID="SubmitButton" runat="server" OnClick="SubmiteButton" Text="Send" />
+
             <asp:ValidationSummary ID="vldChexckboxes" runat="server" />
         </div>
 </div>

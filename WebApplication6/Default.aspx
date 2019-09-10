@@ -139,7 +139,7 @@
     <br />
     <asp:TextBox ID="LastComment" Text="Fornavn" runat="server"></asp:TextBox>
     <br />
-    <%-- Submit button --%>
+    <%-- Submit button --%> 
 
     <div class="row">
         <asp:Button ID="SubmitButton" runat="server" OnClick="SubmiteButton" Text="Submit" />

@@ -13,6 +13,7 @@ namespace WebApplication6
     public partial class _Default : Page
     {
         Logik logik = new Logik();
+        Resultater resultat = new Resultater();
         bool selected;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -26,8 +27,17 @@ namespace WebApplication6
                 return;
 
             // a is our selected value from the list
-            string selectedItemFromList = RadioListQ1.SelectedValue;
-            Debug.WriteLine(selectedItemFromList);
+            resultat.Q1 = RadioListQ1.SelectedValue;
+            resultat.Q1Comments = Comment1.Text;
+            resultat.Q2 = RadioListQ2.SelectedValue;
+            resultat.Q2Comments = Comment2.Text;
+            resultat.Q3 = RadioListQ3.SelectedValue;
+            resultat.Q3Comments = Comment3.Text;
+            resultat.Q4 = RadioListQ1.SelectedValue;
+            resultat.Q4Comments = Comment4.Text;
+            resultat.AdditionalComments = LastComment.Text;
+
+            logik.SendAnswer(resultat);
         }
 
         /// <summary>

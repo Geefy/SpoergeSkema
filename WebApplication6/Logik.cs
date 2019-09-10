@@ -11,7 +11,18 @@ namespace WebApplication6
 
         public void SendAnswer(Resultater resultat)
         {
-            //db.InsertIntoDatabase(query);
+            string[] values = new string[] {
+                resultat.Q1,
+                resultat.Q1Comments,
+                resultat.Q2,
+                resultat.Q2Comments,
+                resultat.Q3,
+                resultat.Q3Comments,
+                resultat.Q4,
+                resultat.Q4Comments,
+                resultat.AdditionalComments
+            };
+            db.InsertIntoDatabase(values);
         }
     }
 }

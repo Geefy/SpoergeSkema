@@ -13,18 +13,33 @@
 
     <%-- (1) Question1   1 out of 10 checkbox --%>
 
+
+
+      <label for="MainContent_RadioList_0">1</label>
+      <label for="MainContent_RadioList_1">2</label>
+      <label for="MainContent_RadioList_2">3</label>
+      <label for="MainContent_RadioList_3">4</label>
+      <label for="MainContent_RadioList_4">5</label>
+      <label for="MainContent_RadioList_5">6</label>
+      <label for="MainContent_RadioList_6">7</label>
+      <label for="MainContent_RadioList_7">8</label>
+      <label for="MainContent_RadioList_8">9</label>
+      <label for="MainContent_RadioList_9">10</label>
+
     <asp:RadioButtonList ID="RadioList" CssClass="radioButtonList" runat="server" RepeatDirection="Horizontal" TextAlign="Left" >
-        <asp:ListItem Text="1" Value="1" />
-        <asp:ListItem Text="2" Value="2" />
-        <asp:ListItem Text="3" Value="3" />
-        <asp:ListItem Text="4" Value="4" />
-        <asp:ListItem Text="5" Value="5" />
-        <asp:ListItem Text="6" Value="6" />
-        <asp:ListItem Text="7" Value="7" />
-        <asp:ListItem Text="8" Value="8" />
-        <asp:ListItem Text="9" Value="9" />
-        <asp:ListItem Text="10" Value="10" />
+        <asp:ListItem Text="" Value="1" />
+        <asp:ListItem Text="" Value="2" />
+        <asp:ListItem Text="" Value="3" />
+        <asp:ListItem Text="" Value="4" />
+        <asp:ListItem Text="" Value="5" />
+        <asp:ListItem Text="" Value="6" />
+        <asp:ListItem Text="" Value="7" />
+        <asp:ListItem Text="" Value="8" />
+        <asp:ListItem Text="" Value="9" />
+        <asp:ListItem Text="" Value="10" />
     </asp:RadioButtonList>
+
+          
 
 
 

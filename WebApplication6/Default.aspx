@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="SKP Sporge Skema" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication6._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
     <div class="row">
         <asp:Image runat="server" ImageUrl="~/Content/zbclogo.jpg" />
     </div>
@@ -74,7 +75,6 @@
             </asp:RadioButtonList>
         </div>
     </div>
-
     <%-- (4) Inputbox  --%>
     <div class="InputBox">
         <br />
@@ -82,6 +82,7 @@
         <br />
     </div>
     <%-- (5) Question3   1 out of 10 checkbox  --%>
+
     <div class="CheckBoxContent">
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ3_0">1</label>
@@ -111,6 +112,7 @@
         </div>
     </div>
 
+
     <%-- (6) Inputbox  --%>
     <div class="InputBox">
         <br />
@@ -118,6 +120,7 @@
         <br />
     </div>
     <%-- (7) Question3   1 out of 10 checkbox  --%>
+
     <div class="CheckBoxContent">
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ4_0">1</label>
@@ -147,6 +150,7 @@
         </div>
     </div>
 
+
     <%-- (8) Inputbox  --%>
     <div class="InputBox">
         <br />
@@ -161,11 +165,13 @@
     </div>
     <%-- Submit button --%> 
 
+
         <div class="row">
             <asp:Button  ID="SubmitButton" runat="server" OnClick="SubmiteButton" Text="Submit" />
             <asp:ValidationSummary ID="vldChexckboxes" runat="server" />
         </div>
 </div>
+
 </asp:Content>
 
 

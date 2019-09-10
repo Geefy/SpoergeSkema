@@ -1,4 +1,3 @@
-
 ﻿<%@ Page Title="Praktikpladskonsulentseminar 2019" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication6._Default" %>
 
 
@@ -25,8 +24,6 @@
         <p class="HeaderTextH">Benjamin Jacobsen/UNord</p>
         <p class="HeaderText">For de punkter hvor du skal svarer 1-10 (1 = lavest udbytte - 10 = højeste udbytte)</p>
     </div>
-<div class="ContentBody">
-
 
     <%-- (1) Question1   1 out of 10 checkbox --%>
     <div class="CheckBoxContent">

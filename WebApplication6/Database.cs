@@ -38,7 +38,7 @@ namespace WebApplication6
             finally
             {
                 sqlCon.Close();
-            }
+            }  
         }
 
         public List<Resultater> GetFromDatabase()

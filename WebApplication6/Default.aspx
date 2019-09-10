@@ -152,7 +152,7 @@
             margin: 0;
             padding: 0;
         }
-
+         
             .radioButtonList.horizontal li {
                 display: inline;
             }

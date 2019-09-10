@@ -37,7 +37,7 @@
     <%-- (2) Inputbox  --%>
     <br />
     <asp:TextBox ID="Comment1" Text="Fornavn" runat="server"></asp:TextBox>
-    <br />
+    <br /> 
     <%-- (3) Question2   1 out of 10 checkbox  --%>
 
     <label for="MainContent_RadioListQ2_0">1</label>

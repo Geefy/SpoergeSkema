@@ -3,12 +3,12 @@
 Create table WebsiteTable(
 	id int PRIMARY KEY identity(1,1),
 	question1 varchar(25),
+	comment1 varchar(100),
+	question2 varchar(25),
 	comment2 varchar(100),
 	question3 varchar(25),
+	comment3 varchar(100),
+	question4 varchar(25),
 	comment4 varchar(100),
-	question5 varchar(25),
-	comment6 varchar(100),
-	question7 varchar(25),
-	comment8 varchar(100),
-	comment9 varchar(255)
+	additionalComment varchar(255)
 )

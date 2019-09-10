@@ -1,6 +1,4 @@
-﻿body {
-}
-
+﻿
 .ContentBody{
     padding-left: 120px;
     padding-right: 120px;
@@ -35,8 +33,7 @@ td, th {
     margin-left: -2.7px;
 }
 
-.ChecboxLabel{
-}
+
 .InputBox{
     padding-bottom: 20px;
 }

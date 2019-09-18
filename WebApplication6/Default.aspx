@@ -17,7 +17,7 @@
         <p class="HeaderTextH">Hilsen </p>
           <br />
         <p class="HeaderTextH">Lars Gorm Poulsen/NEXT, <span class="tab">Pia Lauridsen/TEC</span></p>
-        <p class="HeaderTextH">Annette Thestrup - Pia Lauridsen/TEC <span class="tab">Tina Drejer/Region Hovedstaden</span></p>
+        <p class="HeaderTextH">Annette Thestrup/TEC <span class="tab">Tina Drejer/Region Hovedstaden</span></p>
         <p class="HeaderTextH">Jonas Rønsholt Rasmussen/JobcenterKBH <span class="tab">Annemaj Bengtson-Jensen/Region Hovedstaden</span> </p>
         <p class="HeaderTextH">Mathias Breum/Region Hovedstaden <span class="tab">Morten Lynnerup/ZBC</span></p>
         <p class="HeaderTextH">Jesper Jessen-Kampp/Roskilde Handelsskole <span class="tab">Benjamin Jacobsen/UNord</span></p>

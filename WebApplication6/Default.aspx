@@ -15,20 +15,20 @@
         <p class="HeaderText">Det tager kun et par minutter og din besvarelse er anonym.</p>
         <p class="HeaderText">Vi ser frem til at høre fra dig!</p>
         <p class="HeaderTextH">Hilsen </p>
-        <p class="HeaderTextH">Lars Gorm Poulsen/NEXT, </p>
-        <p class="HeaderTextH">Annette Thestrup - Pia Lauridsen/TEC</p>
-        <p class="HeaderTextH">Jonas Rønsholt Rasmussen/JobcenterKBH</p>
-        <p class="HeaderTextH">Mathias Breum/Region Hovedstaden</p>
-        <p class="HeaderTextH">Morten Lynnerup/ZBC</p>
-        <p class="HeaderTextH">Jesper Jessen-Kampp/Roskilde Handelsskole</p>
-        <p class="HeaderTextH">Benjamin Jacobsen/UNord</p>
+          <br />
+        <p class="HeaderTextH">Lars Gorm Poulsen/NEXT, <span class="tab">Pia Lauridsen/TEC</span></p>
+        <p class="HeaderTextH">Annette Thestrup - Pia Lauridsen/TEC <span class="tab">Tina Drejer/Region Hovedstaden</span></p>
+        <p class="HeaderTextH">Jonas Rønsholt Rasmussen/JobcenterKBH <span class="tab">Annemaj Bengtson-Jensen/Region Hovedstaden</span> </p>
+        <p class="HeaderTextH">Mathias Breum/Region Hovedstaden <span class="tab">Morten Lynnerup/ZBC</span></p>
+        <p class="HeaderTextH">Jesper Jessen-Kampp/Roskilde Handelsskole <span class="tab">Benjamin Jacobsen/UNord</span></p>
+        <br />
         <p class="HeaderText">For de punkter hvor du skal svarer 1-10 (1 = lavest udbytte - 10 = højeste udbytte)</p>
-    </div>
+     </div>
 
     <%-- (1) Question1   1 out of 10 checkbox --%>
     <div class="CheckBoxContent">
 
-        <p class="PForPaludan">Velkomst v. Lars Gaardshøj (Udvalgsformand for Erhvervs- og vækstudvalget i Region Hovedstaden) Blev dine forventninger indfriet?</p>
+        <p class="PForPaludan">Velkomst v. Lars Gaardhøj (Formand for Forskning-, Innovation- og Uddannelsesudvalget i Region Hovedstaden) Blev dine forventninger indfriet?</p>
 
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ1_0">1</label>
@@ -72,7 +72,7 @@
     <%-- (3) Question2   1 out of 10 checkbox  --%>
     <div class="CheckBoxContent">
 
-        <p class="PForPaludan">Fremtidens arbejdsmarked v. Henrik Good Hovgaard (Fremtidsforsker og direktør for Future Navigator) Blev dine forventninger indfriet?</p>
+        <p class="PForPaludan">Fremtidens arbejdsmarked v. Henrik Good Hovgaard (Fremtidsforsker/Universal Futurist) Blev dine forventninger indfriet?</p>
 
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ2_0">1</label>
@@ -113,7 +113,7 @@
 
     <div class="CheckBoxContent">
 
-        <p class="PForPaludan">Gruppeøvelser/Oplæg - Blev dine forventninger indfriet?</p>
+        <p class="PForPaludan">Gruppearbejde om fremtidens kompetencer - Blev dine forventninger indfriet?</p>
 
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ3_0">1</label>

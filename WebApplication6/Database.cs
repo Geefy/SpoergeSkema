@@ -9,6 +9,8 @@ namespace WebApplication6
     public class Database
     {
         string connectionString = "Server=ADMINISTRATOR2\\MSSQLSERVERINSTA;Database=Website;User Id=superUser;Password = Pa$$word; ";
+        //string connectionString = @"DATA SOURCE= ZBC-EMA-23111; Initial Catalog = Website; Integrated Security=True;";
+
         //static SqlConnection sqlCon = new SqlConnection((@"DATA SOURCE= ZBC-EMA-23111; Initial Catalog = Website; Integrated Security=True;"));
         SqlConnection sqlCon;
         SqlCommand sqlCom;

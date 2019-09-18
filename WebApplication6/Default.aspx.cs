@@ -38,6 +38,9 @@ namespace WebApplication6
             resultat.AdditionalComments = LastComment.Text;
 
             logik.SendAnswer(resultat);
+            
+            // refreshed the website after it has been submited
+            Response.Redirect(Request.RawUrl);
         }
 
         /// <summary>

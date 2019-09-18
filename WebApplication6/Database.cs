@@ -8,13 +8,19 @@ namespace WebApplication6
 {
     public class Database
     {
-        static SqlConnection sqlCon = new SqlConnection((@"DATA SOURCE= ZBC-EMA-23111; Initial Catalog = Website; Integrated Security=True;"));
-        SqlCommand sqlCom = new SqlCommand("", sqlCon);
+        string connectionString = "Server=ADMINISTRATOR2\\MSSQLSERVERINSTA;Database=Website;User Id=superUser;Password = Pa$$word; ";
+        //string connectionString = @"DATA SOURCE= ZBC-EMA-23111; Initial Catalog = Website; Integrated Security=True;";
+
+        //static SqlConnection sqlCon = new SqlConnection((@"DATA SOURCE= ZBC-EMA-23111; Initial Catalog = Website; Integrated Security=True;"));
+        SqlConnection sqlCon;
+        SqlCommand sqlCom;
 
         public void InsertIntoDatabase(string[] values)
         {
+            sqlCon = new SqlConnection(connectionString);
             string nonQuery = "insert into WebsiteTable ([question1], [comment1], [question2], [comment2], [question3], [comment3], [question4], [comment4], [additionalComment])" +
                 " VALUES (@Q1, @C1, @Q2, @C2, @Q3, @C3, @Q4, @C4, @AC)";
+            sqlCom = new SqlCommand(nonQuery, sqlCon);
             sqlCom.CommandText = nonQuery;
             try
             {

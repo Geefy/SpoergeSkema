@@ -1,15 +1,35 @@
-﻿<%@ Page Title="SKP Sporge Skema" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication6._Default" %>
+﻿<%@ Page Title="Praktikpladskonsulentseminar 2019" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication6._Default" %>
+
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="row">
-        <asp:Image runat="server" ImageUrl="~/Content/zbclogo.jpg" />
+        <asp:Image runat="server" class="Logo" ImageUrl="~/Content/zbc_black.jpg" />
     </div>
 <div class="ContentBody">
-
+    <div class="HeaderContent">
+        <h1>Praktikpladskonsulentseminar 2019</h1>
+        <p class="HeaderText">Vi siger tak for din deltagelse på Erfa-dag den 29. oktober 2019 på ZBC om:</p>
+        <p class="HeaderText">"Trends inden for praktikpladssøgning"</p>
+        <p class="HeaderText">Vi beder dig evaluere dagen og meget gerne komme med forslag til emner.</p>
+        <p class="HeaderText">Det tager kun et par minutter og din besvarelse er anonym.</p>
+        <p class="HeaderText">Vi ser frem til at høre fra dig!</p>
+        <p class="HeaderTextH">Hilsen </p>
+          <br />
+        <p class="HeaderTextH">Lars Gorm Poulsen/NEXT, <span class="tab">Pia Lauridsen/TEC</span></p>
+        <p class="HeaderTextH">Annette Thestrup/TEC <span class="tab">Tina Drejer/Region Hovedstaden</span></p>
+        <p class="HeaderTextH">Jonas Rønsholt Rasmussen/JobcenterKBH <span class="tab">Annemaj Bengtson-Jensen/Region Hovedstaden</span> </p>
+        <p class="HeaderTextH">Mathias Breum/Region Hovedstaden <span class="tab">Morten Lynnerup/ZBC</span></p>
+        <p class="HeaderTextH">Jesper Jessen-Kampp/Roskilde Handelsskole <span class="tab">Benjamin Jacobsen/UNord</span></p>
+        <br />
+        <p class="HeaderText">For de punkter hvor du skal svarer 1-10 (1 = lavest udbytte - 10 = højeste udbytte)</p>
+     </div>
 
     <%-- (1) Question1   1 out of 10 checkbox --%>
     <div class="CheckBoxContent">
+
+        <p class="PForPaludan">Velkomst v. Lars Gaardhøj (Formand for Forskning-, Innovation- og Uddannelsesudvalget i Region Hovedstaden) Blev dine forventninger indfriet?</p>
+
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ1_0">1</label>
             <label for="MainContent_RadioListQ1_1">2</label>
@@ -42,12 +62,18 @@
 
     <%-- (2) Inputbox  --%>
     <div class="InputBox">
+
+        <p class="PForPaludan">Kommentarer</p>
         <br />
-        <asp:TextBox CssClass="InputBoxx" ID="Comment1" Text="Fornavn" runat="server"></asp:TextBox>
+        <asp:TextBox CssClass="InputBoxx" ID="Comment1" placeholder="Skriv dit svar" Text="" runat="server"></asp:TextBox>
+
         <br />
     </div>
     <%-- (3) Question2   1 out of 10 checkbox  --%>
     <div class="CheckBoxContent">
+
+        <p class="PForPaludan">Fremtidens arbejdsmarked v. Henrik Good Hovgaard (Fremtidsforsker/Universal Futurist) Blev dine forventninger indfriet?</p>
+
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ2_0">1</label>
             <label for="MainContent_RadioListQ2_1">2</label>
@@ -80,13 +106,18 @@
     </div>
     <%-- (4) Inputbox  --%>
     <div class="InputBox">
+       <p class="PForPaludan">Kommentarer</p>
         <br />
-        <asp:TextBox CssClass="InputBoxx" ID="Comment2" Text="Fornavn" runat="server"></asp:TextBox>
+        <asp:TextBox CssClass="InputBoxx" ID="Comment2" placeholder="Skriv dit svar" Text="" runat="server"></asp:TextBox>
+
         <br />
     </div>
     <%-- (5) Question3   1 out of 10 checkbox  --%>
 
     <div class="CheckBoxContent">
+
+        <p class="PForPaludan">Gruppearbejde om fremtidens kompetencer - Blev dine forventninger indfriet?</p>
+
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ3_0">1</label>
             <label for="MainContent_RadioListQ3_1">2</label>
@@ -118,13 +149,18 @@
 
     <%-- (6) Inputbox  --%>
     <div class="InputBox">
+
+        <p class="PForPaludan">Kommentarer</p>
         <br />
-        <asp:TextBox CssClass="InputBoxx" ID="Comment3" Text="Fornavn" runat="server"></asp:TextBox>
+        <asp:TextBox CssClass="InputBoxx" ID="Comment3" placeholder="Skriv dit svar" Text="" runat="server"></asp:TextBox>
+
         <br />
     </div>
     <%-- (7) Question3   1 out of 10 checkbox  --%>
 
     <div class="CheckBoxContent">
+        <p class="PForPaludan">Praktikpladsen.dk v. Tommy Ravn Jensen (Styrelsen for IT og læring, Chefkonsulent) Blev dine forventninger indfriet?</p>
+
         <div class="ChecboxLabel">
             <label for="MainContent_RadioListQ4_0">1</label>
             <label for="MainContent_RadioListQ4_1">2</label>
@@ -156,21 +192,29 @@
 
     <%-- (8) Inputbox  --%>
     <div class="InputBox">
+
+        <p class="PForPaludan">Kommentarer</p>
         <br />
-        <asp:TextBox CssClass="InputBoxx" ID="Comment4" Text="Fornavn" runat="server"></asp:TextBox>
+        <asp:TextBox CssClass="InputBoxx" ID="Comment4" placeholder="Skriv dit svar" Text="" runat="server"></asp:TextBox>
+
         <br />
     </div>
     <%-- (9) Inputbox  last --%>
     <div class="InputBox"> 
+
+        <p class="PForPaludan">Opsamling og invitation til deltagelse i planlægningsgruppen? Hvis du ikke fik tilkendegivet du gerne ville deltage, er du velkommen til at sende en mail til: at@tec.dk Evt. kommentarer </p>
         <br />
-        <asp:TextBox CssClass="InputBoxx" ID="LastComment" Text="Fornavn" runat="server"></asp:TextBox>
+        <asp:TextBox CssClass="InputBoxx" ID="LastComment" placeholder="Skriv dit svar" Text="" runat="server"></asp:TextBox>
+
         <br />
     </div>
     <%-- Submit button --%> 
 
 
         <div class="row">
-            <asp:Button  ID="SubmitButton" runat="server" OnClick="SubmiteButton" Text="Submit" />
+
+            <asp:Button  ID="SubmitButton" runat="server" OnClick="SubmiteButton" Text="Send" />
+
             <asp:ValidationSummary ID="vldChexckboxes" runat="server" />
         </div>
 </div>

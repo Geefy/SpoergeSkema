@@ -60,6 +60,9 @@
             <label class="label10" for="MainContent_RadioListQ2_8">9</label>
             <label class="label10" for="MainContent_RadioListQ2_9">10</label>
         </div>
+
+        <a href="C:\PerfLogs\zbc-gruppe (ZBC-FIL.efif.dk)">Link til server</a>
+
         <div class="ChecboxList">
             <asp:RadioButtonList ID="RadioListQ2" CssClass="radioButtonList" runat="server" RepeatDirection="Horizontal" TextAlign="Left">
             <asp:ListItem Text="" Value="1" />
